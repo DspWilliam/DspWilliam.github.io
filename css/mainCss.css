@@ -1,0 +1,1035 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Dosis;
+}
+html body {
+    width: 100%;
+}
+.parents {
+    position: relative;
+}
+.fixedStyle {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+}
+
+/*************
+    头部部分
+**************/
+#header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#header .headerTop {
+    border-bottom: 1px solid rgba(235,235,235,0.2);
+}
+#header .row {
+    width: 100%;
+}
+#header .top {
+    height: 42px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+#header .headerLeft {
+    transform: translateY(25%);
+}
+#header .headerLeft, #header .headerRight, #header .headerLeft div, #header .headerRight div {
+    display: inline-block;
+}
+#header .headerLeft div {
+    margin-right: 30px;
+    cursor: pointer;
+}
+#header .headerLeft img {
+    vertical-align: center;
+    margin-right: 6px;
+}
+#header .headerLeft span, #header .headerRight span, #header .headerRight button {
+    color: #ffffff;
+}
+#header .headerRight {
+    float: right;
+}
+#header .headerRight button {
+    background: none;
+    border: none;
+    outline: none;
+}
+#header .headerRight div {
+    width: 65px;
+    transform: translateY(-25%);
+}
+#header .headerRight div.short {
+    margin-left: 10px;
+    width: 60px;
+}
+#header .headerRight div:first-child {
+    position: relative;
+    width: 78px;
+}
+#header .headerRight img {
+    vertical-align: center;
+}
+#header .headerRight img.jiantou {
+    margin-left: 2px;
+}
+#header .bar {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background: rgba(235,235,235,0.2);
+}
+#header .headerRight ul {
+    position: absolute;
+    top: 19px;
+    width: 16rem;
+    background: #70c745;
+    padding: 10px 0;
+    border-radius: 6px;
+    display: none;
+}
+#header .headerRight ul li {
+    padding: 4px 24px;
+    font-size: 12px;
+    color: #ffffff;
+    cursor: pointer;
+}
+#header .headerRight ul li {
+
+}
+
+/***************
+    导航栏部分
+****************/
+#header .navContainer {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .nav {
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#header .navContainer ul {
+    margin: 0;
+}
+#header .navContainer ul li {
+    float: left;
+    height: 35px;
+}
+#header .navContainer ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Dosis;
+    font-weight: 900;
+    padding: 0 30px;
+}
+#header .navContainer ul li a:hover {
+    text-decoration: none;
+}
+#header .lastNav {
+    display: inline-block;
+    margin-right: 30px;
+}
+/*********************
+    导航栏下拉菜单部分
+**********************/
+#header .nav .downMenu {
+    display: none;
+    padding: 10px 0;
+    position: absolute;
+    background: #ffffff;
+    width: 180px;
+    top: 35px;
+    left: 2px;
+}
+#header .nav .downMenu li {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+#header .nav .downMenu a {
+    color: #000;
+    font-family: Dosis;
+    font-size: 14px;
+}
+#header .nav .downMenu li img {
+    float: right;
+    margin-right: 10px;
+    margin-left: 0;
+}
+#header .nav .downMenu  li a {
+    display: inline-block;
+    width: 85%;
+}
+#header .shopDown, #header .portfolioDown, #header .blogDown {
+    padding: 10px 0;
+    position: absolute;
+    background: #ffffff;
+    width: 180px;
+    left: 180px;
+    top: 0;
+    display: none;
+}
+#lunbo {
+    overflow: hidden;
+}
+#lunboContainer {
+    width: 4320px;
+}
+.part1_1, .part1_2 {
+    float: left;
+}
+.part1_1 {
+    width: 1440px;
+    height: 900px;
+    background-image: url("../img/header/headerBg1.jpg");
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+.part1_2 {
+    width: 1440px;
+    height: 900px;
+    background-image: url("../img/header/headerBg2.jpg");
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+.part1_1::after, .part1_2::after {
+    background-color: rgba(17, 17, 17, 0.5);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+/*****************
+    part1文字部分
+******************/
+.part1_1 .content, .part1_2 .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 390px 10% 0;
+}
+.part1_1 .content h2, .part1_2 .content h2 {
+    margin-bottom: 8px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+}
+.part1_1 .content p, .part1_2 .content p {
+    margin-bottom: 50px;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.part1_1 .buttons, .part1_2 .buttons {
+    width: 340px;
+    margin: 0 auto;
+}
+.part1_1 .buttons input, .part1_2 .buttons input {
+    width: 150px;
+    height: 46px;
+    border: 2px solid #70c745;
+    border-radius: 2px;
+    background: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #70c745;
+}
+.part1_1 .buttons .acBtn, .part1_2 .buttons .acBtn {
+    margin-right: 30px;
+    background: #70c745;
+    color: #ffffff;
+}
+
+/*****************
+    part2部分
+******************/
+#part2 {
+    padding-top: 100px;
+    background: #f2f4f5;
+}
+#part2 .title {
+    margin-bottom: 40px;
+}
+#part2 .title h3, #part2 .title p {
+   text-align: center;
+}
+#part2 .title h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+}
+#part2 .title p {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+}
+#part2 .left img {
+    margin-right: 30px;
+    margin-top: 18px;
+    vertical-align: top;
+}
+#part2 .left .rText {
+    display: inline-block;
+    width: 370px;
+}
+#part2 .left .rText h3 {
+    color: #303030;
+    line-height: 1.3;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+}
+#part2 .left .rText p {
+    margin: 0;
+    color: #707070;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+#part2 .left .smContent {
+    margin-bottom: 50px;
+}
+#part2 .right {
+    margin-bottom: 100px;
+}
+#part2 .right img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/****************
+    part3部分
+ ****************/
+#part3 {
+    padding-top: 100px;
+}
+#part3 .title {
+    margin-bottom: 40px;
+}
+#part3 .title h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: 1.3;
+}
+#part3 .title p {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+}
+#part3 .smText {
+    margin-bottom: 16px;
+    color: #707070;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+#part3 .datePart {
+    margin: 40px 0 50px 0;
+}
+#part3 .datePart p {
+    font-weight: 500;
+    line-height: 1;
+    font-size: 18px;
+    color: #303030;
+    margin-bottom: 10px;
+}
+#part3 .date {
+    margin-bottom: 30px;
+    position: relative;
+
+}
+#part3 .date div {
+    background-color: #ebebeb;
+    height: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+}
+#part3 .dateContianer {
+    position: relative;
+}
+#part3 .date .dateBar {
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(112, 199, 69);
+}
+#part3 .dateBar80 {
+    width: 80%;
+}
+#part3 .dateBar70 {
+    width: 70%;
+}
+#part3 .dateBar85 {
+    width: 85%;
+}
+#part3 .dateBar65 {
+    width: 65%;
+}
+#part3 .date div span {
+    margin-top: -35px;
+    padding: 2px 4px;
+    font-size: 18px;
+    color: #303030;
+    font-weight: 500;
+    position: absolute;
+}
+#part3 .date .persent80 {
+    right: 20%;
+}
+#part3 .date .persent85 {
+    right: 15%;
+}
+#part3 .date .persent70 {
+    right: 30%;
+}
+#part3 .date .persent65 {
+    right: 35%;
+}
+#part3 .right .row div {
+    margin-bottom: 50px;
+}
+#part3 .right .row div img {
+    margin-bottom: 30px;
+}
+#part3 .right .row div h5 {
+    margin-top: 0;
+    color: #303030;
+    line-height: 1.3;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#part3 .right .row div p {
+    color: #707070;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+#part3 .bottomLine {
+    width: 100%;
+    height: 1px;
+    background-color: #ebebeb;
+    margin-top: 50px;
+}
+
+/****************
+    part4部分
+ ****************/
+#part4 {
+    padding-top: 100px;
+}
+#part4 .title {
+    margin-bottom: 40px;
+}
+#part4 .title h2 {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+#part4 .title p {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+    text-align: center;
+}
+#part4 .select {
+    width: 46%;
+    margin-bottom: 30px;
+}
+#part4 .select button {
+    background: none;
+    font-size: 20px;
+    color: #707070;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+#part4 .imgPart {
+    width: 100%;
+}
+#part4 .imgPart .imgContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    margin-top: 20px;
+    height: 400px;
+}
+#part4 .imgPart .fontCover {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: calc(100% - 20px);
+    height: 100%;
+    background: rgba(112, 199, 69, 0.6);
+    cursor: pointer;
+}
+#part4 .imgPart .font {
+    margin-top: 170px;
+}
+#part4 .imgPart .fontCover h5 {
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    color: #ffffff;
+}
+#part4 .imgPart .fontCover p {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+#part4 .imgPart .imgContainer .imgBlock {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: calc(100% - 20px);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+#part4 .people {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#part4 .people .peopleContainer {
+    position: relative;
+}
+#part4 .people .peopleContainer::after {
+    content: '';
+    visibility: hidden;
+}
+#part4 .people .pictrue div {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#part4 .people .introTitle {
+    margin-bottom: 40px;
+}
+#part4 .people .introTitle h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+#part4 .people .introTitle p {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+}
+#part4 .people .introText {
+    color: #707070;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+#part4 .people .name h6 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+#part4 .people .name p {
+    margin-bottom: 0;
+    color: #70c745;
+}
+#part4 .people .people2, #part4 .people .people3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#part4 .people .peopleSelect {
+    width: 50%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+ }
+#part4 .people .peopleSelect .dot {
+    max-width: 12px;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    border: 2px solid #b6b7b7;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+#part4 .people .peopleSelect .dot::after {
+    width: 4px;
+    height: 4px;
+    background-color: #70c745;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/****************
+    part5部分
+ ****************/
+#part5 {
+    background-color: #f2f4f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#part5 .title {
+    margin-bottom: 40px;
+}
+#part5 .title h2 {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+#part5 .title p {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+    text-align: center;
+}
+#part5 .imgContainer {
+    position: relative;
+    cursor: pointer;
+}
+#part5 .hot {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#part5 .hot a {
+    background-color: #429edf;
+    border-radius: 2px;
+    display: inline-block;
+    height: 20px;
+    padding: 0 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+}
+#part5 .bar {
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+}
+#part5 .bar a {
+    height: 50px;
+    text-decoration: none;
+    background: rgba(0,0,0,0.9);
+    text-transform: uppercase;
+}
+#part5 .bar .first {
+    width: 50px;
+    height: 50px;
+}
+#part5 .bar .second {
+    width: calc(100% - 100px);
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    border-left: 1px solid rgba(235, 235, 235, 0.5);
+    border-right: 1px solid rgba(235, 235, 235, 0.5);
+    vertical-align: top;
+    text-align: center;
+    line-height: 50px;
+}
+#part5 .intro {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+#part5 .intro p {
+    margin-bottom: 0;
+    color: #707070;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+#part5 .intro h6 {
+    margin: 0;
+    font-size: 18px;
+    color: #303030;
+    line-height: 1.3;
+    font-weight: bold;
+    text-align: center;
+}
+#part5 button {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 46px;
+    color: #ffffff;
+    background-color: #70c745;
+    border: 2px solid #70c745;
+    border-radius: 2px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: none;
+}
+
+/**************
+    part6部分
+ **************/
+#part6 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#part6 .title {
+    margin-bottom: 40px;
+}
+#part6 .title h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#part6 .title p {
+    text-align: center;
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+}
+#part6 .picPart {
+    margin-bottom: 30px;
+}
+#part6 .picPart .pic img {
+    width: 100%;
+    cursor: pointer;
+}
+#part6 .picPart .text h5 {
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #303030;
+    font-weight: 900;
+    cursor: pointer;
+}
+#part6 .picPart .text div {
+    position: relative;
+    margin-bottom: 10px;
+}
+#part6 .picPart .text a {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #b7b7b7;
+    margin-right: 30px;
+}
+#part6 .picPart .text a:hover {
+    text-decoration: none;
+}
+#part6 .picPart .text .name::after {
+    content: '/';
+    top: 0;
+    left: -20px;
+    position: absolute;
+}
+#part6 .picPart .text p {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+}
+
+/***************
+    part7部分
+ ***************/
+#part7 {
+    padding: 60px 0;
+    position: relative;
+    background-image: url(../img/part7/subscribe.png);
+    background-position: top right;
+    background-size: cover;
+}
+#part7 img {
+    position: absolute;
+    top: -30px;
+    left: 5%;
+}
+#part7 .text h2 {
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #303030;
+    line-height: 1.3;
+    font-weight: 900;
+}
+#part7 .text p {
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+}
+#part7 form {
+    position: relative;
+}
+#part7 form input {
+    width: 100%;
+    height: 46px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+}
+#part7 form button {
+    width: 150px;
+    border: none;
+    height: 46px;
+    color: #ffffff;
+    background-color: #70c745;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+}
+
+#part8 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#part8 .title {
+    margin-bottom: 40px;
+}
+#part8 .title h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #303030;
+    line-height: 1.3;
+    font-weight: 900;
+}
+#part8 .title p {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 0;
+    line-height: 1.7;
+    font-weight: 400;
+}
+#part8 form input {
+    padding: 15px 20px;
+    height: 45px;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    padding: 15px 20px;
+    font-weight: 400;
+    color: #b7b7b7;
+    outline: none;
+}
+#part8 form textarea {
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    padding: 15px 20px;
+    font-weight: 400;
+    color: #b7b7b7;
+    outline: none;
+}
+#part8 form button {
+    display: inline-block;
+    min-width: 150px;
+    height: 46px;
+    color: #ffffff;
+    background-color: #70c745;
+    border: 2px solid #70c745;
+    border-radius: 2px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#footer {
+    padding-top: 80px;
+    background: url(../img/footer/3.jpg) center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#footer::after {
+    background-color: rgba(4, 43, 15, 0.8);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+#footer .mainPage {
+    padding-bottom: 30px;
+}
+#footer .footer_1 {
+    margin-bottom: 70px;
+}
+#footer .footer_1 p {
+    color: #b7b7b7;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+#footer .contactWay a {
+    display: inline-block;
+    border: 1px solid #b7b7b7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 5px;
+    line-height: 38px;
+}
+#footer .footer_2 {
+    margin-bottom: 70px;
+}
+#footer .footer_2 h5, #footer .footer_3 h5, #footer .footer_4 h5 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    font-weight: 900;
+}
+#footer .footer_2 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#footer .footer_2 li {
+    width: 50%;
+}
+#footer .footer_2 li a {
+    display: block;
+    color: #b7b7b7;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+#footer .footer_2 li a:hover, #footer .footer_3 .sPlant .text a:hover {
+    text-decoration: none;
+}
+#footer .footer_3 {
+    margin-bottom: 70px;
+}
+#footer .footer_3 .sPlant {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+#footer .footer_3 .sPlant .pLogo {
+    width: 70px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+#footer .footer_3 .sPlant .text a {
+    display: block;
+    color: #b7b7b7;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#footer .footer_3 .sPlant .text p {
+    margin-bottom: 0;
+    color: #ffffff;
+    font-weight: 500;
+}
+#footer .footer_4 div p {
+    line-height: 1.3;
+    color: #ffffff;
+    margin-bottom: 13px;
+    font-size: 16px;
+    font-weight: 400;
+}
+#footer .footer_4 div span {
+    color: #b7b7b7;
+}
+#footer .line {
+    width: 100%;
+    height: 1px;
+    background-color: #34513d;
+}
+#footer .left {
+    padding: 20px 0;
+}
+#footer .left p {
+    font-size: 14px;
+    color: #b7b7b7;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+#footer ul {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+#footer ul a {
+    display: inline-block;
+    color: #b7b7b7;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 15px;
+}
+#footer ul .last {
+    margin-right: 0;
+}
